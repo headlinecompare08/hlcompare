@@ -1,0 +1,50 @@
+<html>
+    <head>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    </head>
+    <style>
+    h1 {
+      font-family:'Roboto Condensed', sans-serif; 
+      text-align:center;
+    }
+    .mainhlcolumns {
+      display:grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      padding-right: 40px;
+      padding-left: 40px;
+    }
+    .nytimes {
+      text-align:center;
+      font-family: Georgia;
+      font-size: 15px;
+     
+    }
+    .bbc {
+      text-align:center;
+      font-family: "Gill Sans";
+      font-size: 15px;
+    }
+    .foxnews {
+      text-align:center;
+      font-family:"Futura";
+      font-size:15px;
+    }
+    </style>
+    <body>
+    <h1>
+    HEADLINE COMPARE
+    </h1>
+    <div class="mainhlcolumns">
+    <div class="nytimes">The New York Times
+    <p>
+    {% block nytimes_articles %}{% endblock %}
+    </p>
+    </div>
+    <div class="bbc">BBC</div>
+    <div class="foxnews">Fox News</div>
+    
+    </div> 
+    
+    </body>
+    </html>
